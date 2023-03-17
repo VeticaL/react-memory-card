@@ -28,7 +28,7 @@ h2 {
   gap: 2rem;
 }
 
-h3 {
+h3, img {
   border-radius: 1rem;
   background: #bfdbfe;
   padding: 1.25rem;
