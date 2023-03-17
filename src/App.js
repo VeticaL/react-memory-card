@@ -1,4 +1,6 @@
 import "./App.css";
+import Score from "./Score";
+import Cards from "./Cards";
 
 function App() {
   return (
@@ -6,16 +8,8 @@ function App() {
       <div className="header">
         <h1>Memory Game</h1>
       </div>
-      <div className="score">
-        <h2>Score: 10</h2>
-        <h2>Best: 50</h2>
-      </div>
-      <div className="cards">
-        <h3>img</h3>
-        <h3>img2</h3>
-        <h3>img3</h3>
-        <h3>img4</h3>
-      </div>
+      <Score />
+      <Cards />
       <footer>The odin project @</footer>
     </div>
   );
