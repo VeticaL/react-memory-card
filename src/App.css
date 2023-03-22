@@ -1,3 +1,8 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
 h1 {
   text-align: left;
   margin-left: 3rem;
@@ -28,12 +33,16 @@ h2 {
   gap: 2rem;
 }
 
-h3, img {
+img {
   border-radius: 1rem;
   background: #bfdbfe;
   padding: 1.25rem;
   width: 12.5rem;
   height: 9.5rem;
+}
+
+img:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 footer {
@@ -44,4 +53,22 @@ footer {
   text-align: center;
   background-color: #bfdbfe;
   padding: 0.5rem;
+}
+
+@media (max-width: 450px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .score {
+    margin: 2rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    flex-wrap: wrap;
+  }
 }
